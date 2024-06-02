@@ -164,4 +164,24 @@ console.log(demo(['a', 'b', 'c'], 2));
 </body>
 </html>
 
+第四題:
+const fruits = {
+  Banana: {
+    num: "一串",
+    price: "50"
+  },
+  Orange: {
+    num: "五顆",
+    price: "100"
+  },
+  Apple: {
+    num: "3顆",
+    price: "50"
+  }
+};
+Object.keys(fruits).forEach(fruit => {
+  const { num, price } = fruits[fruit];
+  console.log(`${fruit}是${num}${price}元`);
+});
+
 ```
