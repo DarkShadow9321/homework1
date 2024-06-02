@@ -93,21 +93,21 @@ print(2)
     <title>Document</title>
 </head>
 <body>
-    <img id='img' src="https://fakeimg.pl/150x130" />
-    <button id='bt1'>顯示圖片</button>
-    <button id='bt2'>隱藏圖片</button>
+    <h3 id=wd>我的網頁</h3>
+    <button id='bt1'>黑</button>
+    <button id='bt2'>藍</button>
     <script>
-        const img =
-            document.getElementById('img');
+        const wd =
+            document.getElementById('wd');
         const bt1 =
             document.getElementById('bt1');
         const bt2 =
             document.getElementById('bt2');
         bt1.onclick = () => {
-            img.style.display = 'block';
+            wd.style.color = 'black';
         };
         bt2.onclick = () => {
-            img.style.display = 'none';
+            wd.style.color = 'blue';
         };
     </script>
 </body>
