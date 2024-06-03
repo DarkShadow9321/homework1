@@ -196,10 +196,9 @@ for (let i = 1; i <= 9; i++) {
   for (let j = 1; j <= 9; j++) {
     //將result的結果轉為字串並將結果以0補足為二位數
     const result = (i * j).toString().padStart(2, '0');
-    row += `${i} x ${j} = ${result}\t`;
+    row += `${i}x${j}=${result}\t`;
   }
   console.log(row);
 }
-
 
 ```
