@@ -191,5 +191,14 @@ Object.keys(fruits).forEach(fruit => {
 });
 
 第五題:
+for (let i = 1; i <= 9; i++) {
+  let row = '';
+  for (let j = 1; j <= 9; j++) {
+    const result = (i * j).toString().padStart(2, '0');
+    row += `${i} x ${j} = ${result}\t`;
+  }
+  console.log(row);
+}
+
 
 ```
