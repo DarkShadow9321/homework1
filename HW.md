@@ -184,9 +184,12 @@ const fruits = {
     price: "50"
   }
 };
+//使用object獲取fruits中的所有物件，並使用forEach提取fruit中的內容
 Object.keys(fruits).forEach(fruit => {
   const { num, price } = fruits[fruit];
   console.log(`${fruit}是${num}${price}元`);
 });
+
+第五題:
 
 ```
