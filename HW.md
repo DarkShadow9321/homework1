@@ -152,9 +152,9 @@ console.log(demo(['a', 'b', 'c'], 2));
     <script>
         const convertDate = (dateString) => {
             const date = new Date(dateString);
-            const Year = date.getFullYear() - 1911;
-            const month = String(date.getMonth() + 1).padStart(2, '0');
-            const day = String(date.getDate()).padStart(2, '0');
+            const Year = date.getFullYear() - 1911; //取得4位數的年份，不使用getYear()是因為返回的值會減去1990，會產生千年蟲的問題(千年蟲是指電腦無法判斷1900和2000的差別而產生的錯誤，因為顯示的結果皆為00)
+            const month = String(date.getMonth() + 1).padStart(2, '0'); //取得月份(0~11)，但因與1~12月份不同，因此需要加1，並使數字維持二位數
+            const day = String(date.getDate()).padStart(2, '0'); //取得日期，並使數字維持二位數
             return `${Year}/${month}/${day}`;
         };
         const originalDate = "2024-05-23 00:00:00";
