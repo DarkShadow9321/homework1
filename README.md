@@ -1,5 +1,5 @@
 練習題目
-```css
+```js
 
 第一題:
 const myfunction= () => {
@@ -9,7 +9,8 @@ const myfunction= () => {
     console.log(`a是:${a} b是${b} c是:${c}`);
 };
 myfunction();
-
+```
+```js
 第二題:
 function print(number){
   if(number>0){
@@ -23,7 +24,8 @@ function print(number){
   }
 }
 print(2)
-
+```
+```html
 第三題:
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +56,8 @@ print(2)
     <p>我的網頁</p>
 </body>
 </html>
-
+```
+```html
 第四題:
 <!DOCTYPE html>
 <html lang="en">
@@ -84,7 +87,8 @@ print(2)
     </script>
 </body>
 </html>
-
+```
+```html
 第五題:
 <!DOCTYPE html>
 <html lang="en">
@@ -113,7 +117,8 @@ print(2)
     </script>
 </body>
 </html>
-
+```
+```js
 第六題:
 const printTree = (treeHeight, treeGap) => {
   let ans = "";
@@ -127,20 +132,23 @@ const printTree = (treeHeight, treeGap) => {
 const treeHeight = 7;
 const treeGap = 4;
 console.log(printTree(treeHeight, treeGap));
-
+```
+```js
 延伸題目:
 第一題:
 const print = (x) => x % 2 === 0 ? `${x}是2的倍數` : `${x}不是2的倍數`;
 console.log(print(4));
 console.log(print(7));
-
+```
+```js
 第二題:
 const demo = (arr, index) => {
   arr.splice(index, 1); //從arr中刪除一個index
   return arr;
 }
 console.log(demo(['a', 'b', 'c'], 2));
-
+```
+```html
 第三題:
 <!DOCTYPE html>
 <html lang="en">
@@ -168,7 +176,8 @@ console.log(demo(['a', 'b', 'c'], 2));
     </script>
 </body>
 </html>
-
+```
+```js
 第四題:
 const fruits = {
   Banana: {
@@ -189,7 +198,8 @@ Object.keys(fruits).forEach(fruit => {
   const { num, price } = fruits[fruit];
   console.log(`${fruit}是${num}${price}元`);
 });
-
+```
+```js
 第五題:
 for (let i = 1; i <= 9; i++) {
   let row = '';
@@ -202,3 +212,4 @@ for (let i = 1; i <= 9; i++) {
 }
 
 ```
+
